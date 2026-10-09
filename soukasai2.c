@@ -12,7 +12,7 @@ int main(void){
 	int ar[5],ag[5],ab[5],qr[5],qg[5],qb[5];
 
     srand((unsigned int)time(NULL));
-    ran = GetRandom(2,2);
+    ran = 3; //GetRandom(1,10);//
 
     if(ran == 1){
         n = 1;
@@ -33,13 +33,14 @@ int main(void){
         qr[1] = qr[1] * 2.55;
         qg[1] = qg[1] * 2.55;
         qb[1] = qb[1] * 2.55;
-        printf("　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[m\n",qr[0],qg[0],qb[0]);
-        printf("\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　　　　　\x1b[m\n",qr[0],qg[0],qb[0]);
-        printf("\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　\x1b[m\n",qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0]);
-        printf("\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　\x1b[m\n",qr[0],qg[0],qb[0],255,255,255,qr[0],qg[0],qb[0]);
-        printf("\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　　　　　\x1b[m\n",qr[0],qg[0],qb[0]);
-        printf("\x1b[49m\x1b[48;2;%d;%d;%dm　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　\x1b[m\n",qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1]);
-        printf("　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[m　　\n\n",qr[1],qg[1],qb[1]);
+        printf("\n");
+        printf("　　\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[m\n",qr[0],qg[0],qb[0]);
+        printf("\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　　　　　\x1b[m\n",qr[0],qg[0],qb[0]);
+        printf("\x1b[48;2;%d;%d;%dm　　　　　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　　　　　\x1b[m\n",qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0]);
+        printf("\x1b[48;2;%d;%d;%dm　　　　　　\x1b[m　　　　\x1b[48;2;%d;%d;%dm　　　　　　\x1b[m\n",qr[0],qg[0],qb[0],qr[0],qg[0],qb[0]);
+        printf("\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　　　　　\x1b[m\n",qr[0],qg[0],qb[0]);
+        printf("\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　\x1b[m\n",qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1]);
+        printf("　　\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[m　　\n\n",qr[1],qg[1],qb[1]);
         qr[0] = qr[0] / 2.55;
         qg[0] = qg[0] / 2.55;
         qb[0] = qb[0] / 2.55;
@@ -47,10 +48,42 @@ int main(void){
         qg[1] = qg[1] / 2.55;
         qb[1] = qb[1] / 2.55;
     } else if(ran == 3){
-        n = 1;
-        qr[0] = 0;
-        qg[0] = 0;
-        qb[0] = 100;
+        n = 3;
+        qr[0] = 89;
+        qg[0] = 65;
+        qb[0] = 45;
+        qr[1] = 100;
+        qg[1] = 0;
+        qb[1] = 27;
+        qr[2] = 100;
+        qg[2] = 46;
+        qb[2] = 48;
+        qr[0] = qr[0] * 2.55;
+        qg[0] = qg[0] * 2.55;
+        qb[0] = qb[0] * 2.55;
+        qr[1] = qr[1] * 2.55;
+        qg[1] = qg[1] * 2.55;
+        qb[1] = qb[1] * 2.55;
+        qr[2] = qr[2] * 2.55;
+        qg[2] = qg[2] * 2.55;
+        qb[2] = qb[2] * 2.55;
+        printf("\n");
+        printf("　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　　　\x1b[m\n",qr[2],qg[2],qb[2],qr[1],qg[1],qb[1],qr[2],qg[2],qb[2]);
+        printf("\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　\x1b[m\n",qr[2],qg[2],qb[2],qr[1],qg[1],qb[1],qr[2],qg[2],qb[2],qr[1],qg[1],qb[1],qr[2],qg[2],qb[2]);
+        printf("\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[m\n",qr[2],qg[2],qb[2],qr[1],qg[1],qb[1],qr[2],qg[2],qb[2],qr[0],qg[0],qb[0],qr[2],qg[2],qb[2],qr[1],qg[1],qb[1],qr[2],qg[2],qb[2]);
+        printf("\x1b[48;2;%d;%d;%dm　　　　　　\x1b[m　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[m\n",qr[2],qg[2],qb[2],qr[2],qg[2],qb[2],qr[1],qg[1],qb[1],qr[2],qg[2],qb[2]);
+        printf("\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　　　　　\x1b[48;2;%d;%d;%dm　　\x1b[m\n",qr[1],qg[1],qb[1],qr[2],qg[2],qb[2],qr[1],qg[1],qb[1],qr[2],qg[2],qb[2],qr[1],qg[1],qb[1]);
+        printf("\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[m\n",qr[0],qg[0],qb[0],qr[2],qg[2],qb[2],qr[1],qg[1],qb[1],qr[2],qg[2],qb[2],qr[0],qg[0],qb[0]);
+        printf("　　\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[m　　\n\n",qr[0],qg[0],qb[0]);
+        qr[0] = qr[0] / 2.55;
+        qg[0] = qg[0] / 2.55;
+        qb[0] = qb[0] / 2.55;
+        qr[1] = qr[1] / 2.55;
+        qg[1] = qg[1] / 2.55;
+        qb[1] = qb[1] / 2.55;
+        qr[2] = qr[2] / 2.55;
+        qg[2] = qg[2] / 2.55;
+        qb[2] = qb[2] / 2.55;
     } else if(ran == 4){
         n = 1;
         qr[0] = 100;
