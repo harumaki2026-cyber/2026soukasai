@@ -12,7 +12,7 @@ int main(void){
 	int ar[5],ag[5],ab[5],qr[5],qg[5],qb[5];
 
     srand((unsigned int)time(NULL));
-    ran = 3; //GetRandom(1,10);//
+    ran = GetRandom(1,10);
 
     if(ran == 1){
         n = 1;
